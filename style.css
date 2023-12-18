@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Montserrat:wght@100;400&display=swap');
+
+*{
+border: 0px;
+margin: 0px;
+padding: 0px;
+border-width: 0px;
+outline-width: 0px;
+box-sizing: border-box;
+}
+
+body{
+
+}
+
+.menu{ 
+    display: grid;
+    background-color: #AF5C6B;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav.logoHome{
+    align-items: center;
+}
+.logoHome{
+    width: 80px;
+    padding: 10%;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    font-weight: bold;
+    
+
+}
+
+nav ul li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #F8C8D0;
+
+}
+
+.imagemHome1{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+.imgclinica{
+    width: 100%;
+
+}
+.imagemHome2{
+    padding: auto;
+    position: absolute;
+    top: 180px;
+    left: 80px;
+}
+
+
+.servicos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.conteudoCarrousel{
+    width: 350px;
+    
+    
+}
+
+.carrousel{
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: 1.2em;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.carrousel ::-webkit-scrollbar {
+    display: none;
+}
+
+.card{
+    scroll-snap-align: start;
+    border-radius: 30px;
+    min-height: 200px;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card :nth-child(odd) {
+    background: linear-gradient(-229deg),
+    #AF5C6B, #F8C8D0;
+}
+
+.card :nth-child(even){
+    background: linear-gradient(-229deg),
+    #F8C8D0, #82303D ;
+
+
+}
